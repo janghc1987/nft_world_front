@@ -47,7 +47,7 @@ const HomeContainer = () => {
 	};
 
   useEffect(() => {
-    handleTitle('DODOGO-NFT');
+    handleTitle('WORLD-NFT');
     getMainWidth();
   }, []);
   
@@ -68,7 +68,7 @@ const HomeContainer = () => {
           <div className="contInner">
             <div className="contBox">
               <div className="box1">
-                <p>How to enjoy with DODOGO</p>
+                <p>How to enjoy with WORLD</p>
               </div>
               <div className="box2">
                 <ul>
@@ -78,7 +78,7 @@ const HomeContainer = () => {
                     <div className="txtbox">
                       <p>Once you’ve connected</p>
                       <p>your Metamask wallet</p>
-                      <p>to DODOGO, you are</p>
+                      <p>to WORLD, you are</p>
                       <p>ready to buy NFTs.</p>
                       <p> &nbsp; </p>
                     </div>
@@ -101,7 +101,7 @@ const HomeContainer = () => {
                       <p>Buy or bid for your favorite</p>
                       <p>NFTs with DDP only.</p>
                       <p>Sell your NFTs</p>
-                      <p>curated by DODOGO.</p>
+                      <p>curated by WORLD.</p>
                       <p> &nbsp; </p>
                     </div>
                   </li>

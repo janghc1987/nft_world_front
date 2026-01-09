@@ -21,9 +21,9 @@ const addresses = {
    erc20_testnet: '0x7C0263da81e22c4C5235268cd07887B4b23cf3DD',
 
    //개발
-  //  targetIp : 'http://127.0.0.1:8588'
+    targetIp : 'http://127.0.0.1:8588'
    //운영
-    targetIp : 'https://server.dodogocoin.com'
+   // targetIp : 'https://server.dodogocoin.com'
 }
 
 export default addresses

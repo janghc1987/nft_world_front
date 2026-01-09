@@ -400,7 +400,7 @@ const CreateItemContainer = () => {
   useEffect(() => {
     // document.title = 'CreateItem'
     // handleTitle('CreateItem');
-    handleTitle('DODOGO-NFT');
+    handleTitle('WORLD-NFT');
     getMainWidth();
 
 
