@@ -171,11 +171,11 @@ const MainHeader = () => {
             <div className="infoPrice">
               <div className="contBox">
                 <p>Buy Now</p>
-                <p><span className="frame"><img src={TVsicon} alt=""/></span><em id='sliderBuyNowPrice'>{auctions && auctions.length > 0 && auctions[0].buyNowPrice}</em><span>DDP</span></p>
+                <p><span className="frame"><img src={TVsicon} alt=""/></span><em id='sliderBuyNowPrice'>{auctions && auctions.length > 0 && auctions[0].buyNowPrice}</em><span>DUCKY</span></p>
               </div>
               <div className="contBox">
                 <p>Current Price</p>
-                <p><span className="frame"><img src={TVsicon} alt=""/></span><em id='sliderCurrentPrice'>{auctions && auctions.length > 0 && auctions[0].currentPrice}</em><span>DDP</span></p>
+                <p><span className="frame"><img src={TVsicon} alt=""/></span><em id='sliderCurrentPrice'>{auctions && auctions.length > 0 && auctions[0].currentPrice}</em><span>DUCKY</span></p>
               </div>
             </div>
             <div className="textbox">

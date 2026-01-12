@@ -73,7 +73,7 @@ function SecNavWrapper() {
               {new BigNumber(userPrice)
                 .div(new BigNumber(10).pow(18))
                 .toString()}{' '}
-              DDP)
+              DUCKY)
             </a>
           ) : null}
       </>

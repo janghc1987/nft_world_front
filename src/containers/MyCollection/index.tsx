@@ -887,11 +887,11 @@ const ProfileContainer = () => {
 	
 	const chgSwapToken = () =>{
 
-		if($('#availToken>span').eq(1).text().indexOf('DDP') >= 0 ){//DDS -> DDP
-			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('DDP','DDS'));
+		if($('#availToken>span').eq(1).text().indexOf('DUCKY') >= 0 ){//DDS -> DUCKY
+			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('DUCKY','DDS'));
 			$('#availToken>span>span>em').text(tvsAmount);
 			$('#fromToken').text('DDS');
-			$('#toToken').text('DDP');
+			$('#toToken').text('DUCKY');
 			$('#toTokenQnt').text('DUCKY Quantity');
 			$('#toTokenAmt').val(0);
 			$('#fromTokenAmt').val(0);
@@ -914,7 +914,7 @@ const ProfileContainer = () => {
 			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('ETH','MATIC'));
 			$('#availToken>span>span>em').text(polygonAmount);
 			$('#fromToken').text('MATIC');
-			$('#toToken').text('DDP');
+			$('#toToken').text('DUCKY');
 			$('#toTokenQnt').text('DUCKY Quantity');
 			$('#toTokenAmt').val(0);
 			$('#fromTokenAmt').val(0);
@@ -924,7 +924,7 @@ const ProfileContainer = () => {
 		}else if($('#availToken>span').eq(1).text().indexOf('MATIC') >= 0){//DUCKY -> DDS
 			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('MATIC','DUCKY'));
 			$('#availToken>span>span>em').text(tvpAmount);
-			$('#fromToken').text('DDP');
+			$('#fromToken').text('DUCKY');
 			$('#toToken').text('DDS');
 			$('#toTokenQnt').text('DDS Quantity');
 			$('#toTokenAmt').val(0);
@@ -937,7 +937,7 @@ const ProfileContainer = () => {
 	}
 
 	const tokenSwapCall = () =>{
-		if($('#availToken>span').eq(1).text().indexOf('DDP') >= 0 ){
+		if($('#availToken>span').eq(1).text().indexOf('DUCKY') >= 0 ){
 			// 메타마스크 연동 없이 컨트롤 가능한 회사지갑에서 바로 송금
 			transFromTVP();
 		}else if($('#availToken>span').eq(1).text().indexOf('DDS') >= 0 ){
@@ -989,7 +989,7 @@ const ProfileContainer = () => {
 
 		var fromTokenAmt = $('#fromTokenAmt').val() !== '' ? $('#fromTokenAmt').val():0;
 
-		if($('#availToken>span').eq(1).text().indexOf('DDP') >= 0 ){
+		if($('#availToken>span').eq(1).text().indexOf('DUCKY') >= 0 ){
 			$('#toTokenAmt').val(fromTokenAmt);
 		}else if($('#availToken>span').eq(1).text().indexOf('DDS') >= 0){
 			$('#toTokenAmt').val(fromTokenAmt);
@@ -1224,13 +1224,13 @@ const ProfileContainer = () => {
 		<div className="inputSec">
 			<ul>
 			<li>
-				<p className="subTit" id='availToken'>Available Quantity <span><span><em>{tvpAmount}</em></span></span><span style={{marginRight:10}}>DDP</span></p>
+				<p className="subTit" id='availToken'>Available Quantity <span><span><em>{tvpAmount}</em></span></span><span style={{marginRight:10}}>DUCKY</span></p>
 			</li>
 			<li>
 				<p className="subTit">Token Quantity</p>
 				<div className="inputArea">
 				<input id='fromTokenAmt' type="text" placeholder="Enter Quantity" onChange={calToeknval} onInput={numberChk}/>
-				<span id='fromToken'>DDP</span>
+				<span id='fromToken'>DUCKY</span>
 				</div>
 			</li>
 			<li>
@@ -1240,7 +1240,7 @@ const ProfileContainer = () => {
 				<p className="subTit" id='toTokenQnt'>DUCKY Quantity</p>
 				<div className="inputArea">
 					<input id='toTokenAmt' type="text" readOnly/>
-				<span id='toToken'>DDP</span>
+				<span id='toToken'>DUCKY</span>
 				</div>
 			</li>
 			</ul>

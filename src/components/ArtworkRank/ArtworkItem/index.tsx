@@ -78,9 +78,9 @@ function LiveAuctionsItem(props: IAuction) {
             <em className="frame"><img className={props.auctionId} style={{ cursor: 'pointer' }} src={props.favoriteYn ==='Y'?likeOn:likeOff} alt=""/></em>
           </span>
         </p>
-        <p><span>Highest</span><span><em>{props.currentPrice}</em>DDP</span></p>
+        <p><span>Highest</span><span><em>{props.currentPrice}</em>DUCKY</span></p>
         <p><span>Buy now</span><span>Current Price</span></p>
-        <p><span><em>{props.buyNowPrice}</em>DDP</span><span><em>{props.currentPrice}</em>DDP</span></p>
+        <p><span><em>{props.buyNowPrice}</em>DUCKY</span><span><em>{props.currentPrice}</em>DUCKY</span></p>
       </div>
     </div>
 

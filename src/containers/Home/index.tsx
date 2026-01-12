@@ -85,10 +85,10 @@ const HomeContainer = () => {
                   </li>
                   <li>
                     <span className="frame"><img src={ftimg2} alt=""/></span>
-                    <p>Exchange to DDP</p>
+                    <p>Exchange to DUCKY</p>
                     <div className="txtbox">
                       <p>In order to trade NFT,</p>
-                      <p>you need DDP.</p>
+                      <p>you need DUCKY.</p>
                       <p>You can get DUCKY by</p>
                       <p>exchanging from ETH</p>
                       <p>or DDS.</p>

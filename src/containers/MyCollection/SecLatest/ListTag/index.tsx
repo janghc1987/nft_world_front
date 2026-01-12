@@ -29,7 +29,7 @@ function ListTag({
           </div>
           <div className="d-flex flex-column justify-content-center ms-auto">
             <h6 className="text-sm font-weight-normal mb-1">
-              <span className="gradient-text">{subPrice} DDP</span>
+              <span className="gradient-text">{subPrice} DUCKY</span>
             </h6>
             <p className="text-xs text-secondary mb-0">${price}</p>
           </div>

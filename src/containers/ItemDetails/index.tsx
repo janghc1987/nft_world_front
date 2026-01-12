@@ -966,11 +966,11 @@ const onBuyNow = async () => {
 					<div className="priceInfo">
 						<div className="contbox">
 						<p>Current Price</p>
-						<p><span className="frame"><img src={TVsOn} alt=""/></span><span><em>{auction?.currentPrice}</em>DDP</span></p>
+						<p><span className="frame"><img src={TVsOn} alt=""/></span><span><em>{auction?.currentPrice}</em>DUCKY</span></p>
 						</div>
 						<div className="contbox">
 						<p>Buy Now</p>
-						<p><span className="frame"><img src={TVsOn} alt=""/></span><span><em>{auction?.buyNowPrice}</em>DDP</span></p>
+						<p><span className="frame"><img src={TVsOn} alt=""/></span><span><em>{auction?.buyNowPrice}</em>DUCKY</span></p>
 						</div>
 					</div>
 
@@ -1128,7 +1128,7 @@ const onBuyNow = async () => {
 					<span>Buy Now Price</span>
 					<input type="text" value={auction?.buyNowPrice} readOnly />
 					
-					<span>DDP</span>
+					<span>DUCKY</span>
 					</div>
 				</div>
 				</div>
@@ -1158,7 +1158,7 @@ const onBuyNow = async () => {
 						<div className="inputArea on">
 						<span>You are Bid</span>
 						<input type="text" name="bidinput" id="bidinput" ref={inputRef} onKeyUp={biddingChk} onInput={numberChk}/>
-						<span>DDP</span>
+						<span>DUCKY</span>
 						</div>
 						<span className="err" style={{display:'none'}}>Must be higher than the highest bid</span>
 					</div>
@@ -1181,7 +1181,7 @@ const onBuyNow = async () => {
 					<p>Starting price<span>*</span></p>
 					<div className="inputArea">
 						<input type="text" id="startPrice" placeholder="Enter DUCKY Quantity" onKeyUp={chkCreateAuc1} onInput={numberChk}/>
-						<span>DDP</span>
+						<span>DUCKY</span>
 					</div>
 					<span className="err type1" style={{display:'none'}}>Please enter a starting price</span>
 				</div>
@@ -1190,7 +1190,7 @@ const onBuyNow = async () => {
 					<p>Buy now price<span>*</span></p>
 					<div className="inputArea">
 						<input type="text" id="buyNowPrice" placeholder="Enter a buy now price" onKeyUp={chkCreateAuc2} onInput={numberChk}/>
-						<span>DDP</span>
+						<span>DUCKY</span>
 					</div>
 					<span className="err" style={{display:'none'}}>Please enter a buy now price</span>
 				</div>

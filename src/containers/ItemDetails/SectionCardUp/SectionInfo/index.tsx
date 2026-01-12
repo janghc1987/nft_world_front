@@ -45,7 +45,7 @@ function SectionInfo(auction: IAuction) {
             {new BigNumber(auction.currentPrice)
               .div(new BigNumber(10).pow(18))
               .toString()}{' '}
-            DDP
+            DUCKY
           </span>
         </p>
         <p className="text-bold mb-30">
@@ -54,7 +54,7 @@ function SectionInfo(auction: IAuction) {
             {new BigNumber(auction.buyNowPrice)
               .div(new BigNumber(10).pow(18))
               .toString()}{' '}
-            DDP
+            DUCKY
           </span>
         </p>
         <p>

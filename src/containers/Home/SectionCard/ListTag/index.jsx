@@ -18,7 +18,7 @@ function ListTag({ path1, NumImg, img, path2, text1, path3, text2, price }) {
           {text2}
         </NavLink>
       </div>
-      <span className="auth-earning ms-auto">{price} DDP</span>
+      <span className="auth-earning ms-auto">{price} DUCKY</span>
     </li>
   );
 }

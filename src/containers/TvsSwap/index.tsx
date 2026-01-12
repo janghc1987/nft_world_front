@@ -342,10 +342,10 @@ const TokenSwapContainer = () => {
 				</div>
 			</div>
 			<div className="bidArea">
-				<p>TO : DDP</p>
+				<p>TO : DUCKY</p>
 				<div className="inputArea">
 					<input type="text" id="tvpPoint" />
-					<span>DDP</span>
+					<span>DUCKY</span>
 				</div>
 				<span className="err" style={{display:'none'}}>Must be higher than the highest bid</span>
 			</div>

@@ -38,7 +38,7 @@ function SectionPrice(auction: IAuction) {
                   {new BigNumber(auction.currentPrice)
                     .div(new BigNumber(10).pow(18))
                     .toString()}{' '}
-                  DDP
+                  DUCKY
                 </h6>
                 {/* <p className="mb-0 text-dark">${item.highestBid.bidPrice}</p> */}
               </div>
