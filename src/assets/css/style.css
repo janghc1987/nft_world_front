@@ -4,7 +4,11 @@
 header {display: block; width: 100%; height: auto; background-color: #fff; border-bottom: 1px solid rgba(0,0,0,0.1); box-sizing: border-box;}
 header>.headerInner.web {position: relative; margin:0 auto; display: flex; width: 1440px; height: 69px; background-color: #fff; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; box-sizing: border-box;}
 header>.headerInner.web>a.mainLogo {display: block; width: 182px; height: 40px;}
-header>.headerInner.web>a.mainLogo>img {display: block; width: 100%; height: 100%;}
+header>.headerInner.web>a.mainLogo>img {width: 100%;
+  height: 100%;
+  width: auto;          /* 핵심 */
+  object-fit: contain;
+  display: block;}
 header>.headerInner.web>.srchArea {position: relative; padding:0 20px; display: block; width: 325px; height: 40px; background-color: #fff; border-radius: 20px; box-shadow: 0 3px 20px rgba(119, 126, 144, 0.1); box-sizing: border-box;}
 header>.headerInner.web>.srchArea>input {padding:0; display: block; width: 90%; height: 100%; font-weight: 300; font-size: 12px; color: #23262F; font-family: 'Poppins', sans-serif; background-color: #fff; border: none;}
 header>.headerInner.web>.srchArea>input::placeholder {font-weight: 300; font-size: 12px; color: #AFB5C7; font-family: 'Poppins', sans-serif;}
@@ -464,7 +468,12 @@ footer>.footerConts>p>span:last-child {position: absolute; top:50%; right:0; tra
 footer>.footerConts>.footerCont {padding-bottom: 40px; display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid #777E90;}
 footer>.footerConts>.footerCont>.footerCont1 {display: block;}
 footer>.footerConts>.footerCont>.footerCont1>.frame {display: block; width: 284px; height: 60px;}
-footer>.footerConts>.footerCont>.footerCont1>.frame>img {display: block; width: 100%; height: 100%;}
+footer>.footerConts>.footerCont>.footerCont1>.frame>img { 
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* 비율 유지 + 전체 보이게 */
+  display: block;
+}
 footer>.footerConts>.footerCont>.footerCont1>p {padding-left: 84px; font-weight: 500; font-size: 15px; color: #777E90; line-height: normal;}
 
 footer>.footerConts>.footerCont>.footerCont2 {margin-top: 15px; display: block;}
