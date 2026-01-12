@@ -82,25 +82,21 @@ function SidenavFooter() {
               <div className="footerCont3">
                 <p>Community</p>
                 <ul>
-                  <li onClick={()=>window.open('https://dodogocoin.net/')}>
+                  <li onClick={()=>window.open('https://www.duckybrain.com')}>
                     <a href="#"><img src={explorer} alt=""/></a>
                     <a href="#"><img src={explorer} alt=""/></a>
                   </li>
-                  <li onClick={()=>window.open('hhttps://t.me/dodogoglobal')}>
+                  <li onClick={()=>window.open('https://t.me/ducky_game_bot')}>
                     <a href="#"><img src={telegram} alt=""/></a>
                     <a href="#"><img src={telegram} alt=""/></a>
                   </li>
-                  <li onClick={()=>window.open('https://twitter.com/GlobalDodogo')}>
+                  <li onClick={()=>window.open('https://x.com/duckythebrain')}>
                     <a href="#"><img src={twitter} alt=""/></a>
                     <a href="#"><img src={twitter} alt=""/></a>
                   </li>
-                  <li onClick={()=>window.open('https://t.me/addstickers/DODOGO_STICKER')}>
-                    <a href="#"><img src={medium} alt=""/></a>
-                    <a href="#"><img src={medium} alt=""/></a>
-                  </li>
-                  <li onClick={()=>window.open('https://dodo-7.gitbook.io/dodos-whitepaper')}>
-                    <a href="#"><img src={xangle} alt=""/></a>
-                    <a href="#"><img src={xangle} alt=""/></a>
+                  <li onClick={()=>window.open('https://t.me/Duckythebrain')}>
+                    <a href="#"><img src={telegram} alt=""/></a>
+                    <a href="#"><img src={telegram} alt=""/></a>
                   </li>
                 </ul>
               </div>

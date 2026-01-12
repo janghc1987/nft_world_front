@@ -1180,7 +1180,7 @@ const onBuyNow = async () => {
 				<div className="inputbox step1">
 					<p>Starting price<span>*</span></p>
 					<div className="inputArea">
-						<input type="text" id="startPrice" placeholder="Enter DDP Quantity" onKeyUp={chkCreateAuc1} onInput={numberChk}/>
+						<input type="text" id="startPrice" placeholder="Enter DUCKY Quantity" onKeyUp={chkCreateAuc1} onInput={numberChk}/>
 						<span>DDP</span>
 					</div>
 					<span className="err type1" style={{display:'none'}}>Please enter a starting price</span>

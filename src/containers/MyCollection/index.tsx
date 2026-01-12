@@ -651,7 +651,7 @@ const ProfileContainer = () => {
 			let availToken = new BigNumber($('#availToken>span>span>em').text());
 
 			if(Number(fromTokenAmt) > Number(availToken)){
-				alert('You do not have enough DDP in your possession.')
+				alert('You do not have enough DUCKY in your possession.')
 				return;
 			}
 
@@ -806,10 +806,10 @@ const ProfileContainer = () => {
 			  function (err, result) {
 				
 				if(JSON.stringify(result.result) === undefined){
-					alert('DDP 스왑 오류')
+					alert('DUCKY 스왑 오류')
 				}else{
 					console.log(JSON.stringify(result.result));
-					alert("DDP 스왑 신청이 완료되었습니다.")
+					alert("DUCKY 스왑 신청이 완료되었습니다.")
 				}
 		
 			  });
@@ -872,10 +872,10 @@ const ProfileContainer = () => {
 			  function (err, result) {
 				
 				if(JSON.stringify(result.result) === undefined){
-					alert('DDP 스왑 오류')
+					alert('DUCKY 스왑 오류')
 				}else{
 					console.log(JSON.stringify(result.result));
-					alert("DDP 스왑 신청이 완료되었습니다.")
+					alert("DUCKY 스왑 신청이 완료되었습니다.")
 				}
 		
 			  });
@@ -892,7 +892,7 @@ const ProfileContainer = () => {
 			$('#availToken>span>span>em').text(tvsAmount);
 			$('#fromToken').text('DDS');
 			$('#toToken').text('DDP');
-			$('#toTokenQnt').text('DDP Quantity');
+			$('#toTokenQnt').text('DUCKY Quantity');
 			$('#toTokenAmt').val(0);
 			$('#fromTokenAmt').val(0);
 			$('.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit>span').css('font-size','13px');
@@ -903,8 +903,8 @@ const ProfileContainer = () => {
 			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('DDS','ETH'));
 			$('#availToken>span>span>em').text(ethAmount);
 			$('#fromToken').text('ETH');
-			$('#toToken').text('DDP');
-			$('#toTokenQnt').text('DDP Quantity');
+			$('#toToken').text('DUCKY');
+			$('#toTokenQnt').text('DUCKY Quantity');
 			$('#toTokenAmt').val(0);
 			$('#fromTokenAmt').val(0);
 			$('.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit>span').css('font-size','13px');
@@ -915,14 +915,14 @@ const ProfileContainer = () => {
 			$('#availToken>span>span>em').text(polygonAmount);
 			$('#fromToken').text('MATIC');
 			$('#toToken').text('DDP');
-			$('#toTokenQnt').text('DDP Quantity');
+			$('#toTokenQnt').text('DUCKY Quantity');
 			$('#toTokenAmt').val(0);
 			$('#fromTokenAmt').val(0);
 			$('.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit>span').css('font-size','8px');
 			$('#fromTokenAmt').css('width','80%');
 			setFromToken('MATIC');
-		}else if($('#availToken>span').eq(1).text().indexOf('MATIC') >= 0){//DDP -> DDS
-			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('MATIC','DDP'));
+		}else if($('#availToken>span').eq(1).text().indexOf('MATIC') >= 0){//DUCKY -> DDS
+			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('MATIC','DUCKY'));
 			$('#availToken>span>span>em').text(tvpAmount);
 			$('#fromToken').text('DDP');
 			$('#toToken').text('DDS');
@@ -1052,7 +1052,7 @@ const ProfileContainer = () => {
 						<a href="#"><span className="frame type1"><img src={userOn} alt=""/></span><span className="frame type2"><img src={userOff} alt=""/></span>Profile</a>
 					</li>
 					<li>
-						<a href="#"><span className="frame type1"><img src={TVsOn} alt=""/></span><span className="frame type2"><img src={TVsOff} alt=""/></span>DDP Swap</a>
+						<a href="#"><span className="frame type1"><img src={TVsOn} alt=""/></span><span className="frame type2"><img src={TVsOff} alt=""/></span>DUCKY Swap</a>
 					</li>
 					<li>
 						<a href="#" onClick={event => {deactivate(); window.localStorage.removeItem('wallet');history.replace('/');}}><span className="frame type1"><img src={logoutOn} alt=""/></span><span className="frame type2"><img src={logoutOff} alt=""/></span>Disconnect</a>
@@ -1165,7 +1165,7 @@ const ProfileContainer = () => {
 									<p>MATIC Quantity <span><em>{polygonAmount}</em>MATIC</span></p>
 								</li>
 								<li>
-									<p>DDP Quantity <span><em>{tvpAmount}</em>DDP</span></p>
+									<p>DUCKY Quantity <span><em>{tvpAmount}</em>DUCKY</span></p>
 								</li>
 								<li>
 									<div className="btnArea">
@@ -1237,7 +1237,7 @@ const ProfileContainer = () => {
 				<span className="frame" style={{ cursor: 'pointer' }} onClick={chgSwapToken}><img src={exchg} alt=""/></span>
 			</li>
 			<li>
-				<p className="subTit" id='toTokenQnt'>DDP Quantity</p>
+				<p className="subTit" id='toTokenQnt'>DUCKY Quantity</p>
 				<div className="inputArea">
 					<input id='toTokenAmt' type="text" readOnly/>
 				<span id='toToken'>DDP</span>

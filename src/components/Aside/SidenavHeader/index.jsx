@@ -307,7 +307,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
                         <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); history.push('/mycollection')}}><span className="frame type1"><img src={userOn} alt=""/></span>Profile</a>
                       </li>
                       <li>
-                        <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); history.push('/tvpSwap/Y')}}><span className="frame type1"><img src={TVsOn} alt=""/></span>DDP Swap</a>
+                        <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); history.push('/tvpSwap/Y')}}><span className="frame type1"><img src={TVsOn} alt=""/></span>DUCKY Swap</a>
                       </li>
                       <li>
                         <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); deactivate(); window.localStorage.removeItem('wallet');history.replace('/');}} ><span className="frame type1"><img src={logoutOn} alt=""/></span>Disconnect</a>
@@ -346,7 +346,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
                     <a href="#" onClick={event => {event.preventDefault();  mobmnuPop(); history.push('/mycollection')}}><span className="frame"><img src={userOn} alt=""/></span>Profile</a>
                   </li>
                   <li>
-                    <a href="#" onClick={event => {event.preventDefault();  mobmnuPop(); history.push('/tvpSwap/Y')}}><span className="frame"><img src={TVsOn} alt=""/></span>DDP Swap</a>
+                    <a href="#" onClick={event => {event.preventDefault();  mobmnuPop(); history.push('/tvpSwap/Y')}}><span className="frame"><img src={TVsOn} alt=""/></span>DUCKY Swap</a>
                   </li>
                   <li>
                     <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); deactivate(); window.localStorage.removeItem('wallet');history.replace('/');}}><span className="frame"><img src={logoutOn} alt=""/></span>Disconnect</a>

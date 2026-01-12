@@ -89,7 +89,7 @@ const HomeContainer = () => {
                     <div className="txtbox">
                       <p>In order to trade NFT,</p>
                       <p>you need DDP.</p>
-                      <p>You can get DDP by</p>
+                      <p>You can get DUCKY by</p>
                       <p>exchanging from ETH</p>
                       <p>or DDS.</p>
                     </div>
@@ -99,7 +99,7 @@ const HomeContainer = () => {
                     <p>How to Buy & Sell</p>
                     <div className="txtbox">
                       <p>Buy or bid for your favorite</p>
-                      <p>NFTs with DDP only.</p>
+                      <p>NFTs with DUCKY only.</p>
                       <p>Sell your NFTs</p>
                       <p>curated by WORLD.</p>
                       <p> &nbsp; </p>

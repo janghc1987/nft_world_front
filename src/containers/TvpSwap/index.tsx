@@ -281,17 +281,17 @@ const TokenSwapContainer = () => {
 			<div className="listArea sort1">
 				<ul>
 					<div style={{height:'200px' ,width:'100%'}}>
-						<div style={{height:'100px' ,width:'100%'}}>DDP 계좌 {account}</div>
-						<div style={{height:'100px' ,width:'100%'}}>DDP 보유 수량 {tvsPoint}</div>
+						<div style={{height:'100px' ,width:'100%'}}>DUCKY 계좌 {account}</div>
+						<div style={{height:'100px' ,width:'100%'}}>DUCKY 보유 수량 {tvsPoint}</div>
 					</div>
 					<div style={{height:'100px' ,width:'100%'}}>
-						<div style={{height:'100px' ,width:'100%'}}>DDP 수량 {tvpPoint}</div>
+						<div style={{height:'100px' ,width:'100%'}}>DUCKY 수량 {tvpPoint}</div>
 					</div>
 					<div style={{backgroundColor:'red'}} >
-						<a href="#" onClick={exchange} className="on">Token Swap Request(FROM DDS TO DDP)</a>
+						<a href="#" onClick={exchange} className="on">Token Swap Request(FROM DDS TO DUCKY)</a>
 					</div>
 					<div style={{backgroundColor:'blue'}} >
-						<a href="#" onClick={transferToken} className="on">Token Swap Request(FROM DDP TO DDS)</a>
+						<a href="#" onClick={transferToken} className="on">Token Swap Request(FROM DUCKY TO DDS)</a>
 					</div>
 				</ul>
 			</div>
@@ -342,10 +342,10 @@ const TokenSwapContainer = () => {
 				</div>
 			</div>
 			<div className="bidArea">
-				<p>TO : DDP</p>
+				<p>TO : DUCKY</p>
 				<div className="inputArea">
 					<input type="text" id="tvpPoint" />
-					<span>DDP</span>
+					<span>DUCKY</span>
 				</div>
 				<span className="err" style={{display:'none'}}>Must be higher than the highest bid</span>
 			</div>

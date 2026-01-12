@@ -285,13 +285,13 @@ const TokenSwapContainer = () => {
 						<div style={{height:'100px' ,width:'100%'}}>DDS 보유 수량 {tvsPoint}</div>
 					</div>
 					<div style={{height:'100px' ,width:'100%'}}>
-						<div style={{height:'100px' ,width:'100%'}}>DDP 수량 {tvpPoint}</div>
+						<div style={{height:'100px' ,width:'100%'}}>DUCKY 수량 {tvpPoint}</div>
 					</div>
 					<div style={{backgroundColor:'red'}} >
-						<a href="#" onClick={exchange} className="on">Token Swap Request(FROM DDS TO DDP)</a>
+						<a href="#" onClick={exchange} className="on">Token Swap Request(FROM DDS TO DUCKY)</a>
 					</div>
 					<div style={{backgroundColor:'blue'}} >
-						<a href="#" onClick={transferToken} className="on">Token Swap Request(FROM DDP TO DDS)</a>
+						<a href="#" onClick={transferToken} className="on">Token Swap Request(FROM DUCKY TO DDS)</a>
 					</div>
 				</ul>
 			</div>

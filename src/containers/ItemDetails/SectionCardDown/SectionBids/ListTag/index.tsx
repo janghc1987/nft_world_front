@@ -6,7 +6,7 @@ function ListTag(props: IBid) {
   return (
     <li>
       <p>
-        <span>{props.price}</span> DDP <em>by</em> 
+        <span>{props.price}</span> DUCKY <em>by</em> 
         <span>{' '}
               {props.bidder.substr(0, 7)}...
               {props.bidder.substr(props.bidder.length - 7)}
