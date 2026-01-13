@@ -8,7 +8,7 @@ import BigNumber from 'bignumber.js';
 
 import sample1 from '../../../../assets/img/sample1.png'
 import puzzle from '../../../../assets/img/puzzle.png'
-import diamond from '../../../../assets/img/puzzle.png';
+import diamond from '../../../../assets/img/mnu1.png';
 import artwork from '../../../../assets/img/mnu2.png';
 import digitalArt from '../../../../assets/img/mnu3.png';
 
