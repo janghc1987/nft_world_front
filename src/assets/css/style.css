@@ -49,7 +49,11 @@ header>.headerInner.mob {position: fixed; top:0; left:0; padding:0 3vw; display:
 header>.headerInner.mob>a {position: absolute; top:50%; display: block; transform: translateY(-50%);}
 header>.headerInner.mob>a.mainLogo {left: 3vw; width: 26.5vw; height: 6vw;}
 header>.headerInner.mob>a.mobmnuBtn {right: 3vw; width: 5.3vw; height: 5.3vw;}
-header>.headerInner.mob>a>img {display: block; width: 100%; height: 100%;}
+header>.headerInner.mob>a>img {width: 100%;
+  height: 100%;
+  width: auto;          /* 핵심 */
+  object-fit: contain;
+  display: block;}
 
 header>.headerInner.mob>.mobmnuArea {position: absolute; left:0; top:8vh; display: none; width: 100%; height: 100vh; background-color: #fff;}
 header>.headerInner.mob>.mobmnuArea>.connectBtns {padding:2vh 0; display: block; width: 100%; height: auto; background-color: #fff; box-sizing: border-box;}

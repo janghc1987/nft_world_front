@@ -74,9 +74,9 @@ function SidenavFooter() {
                 <p>Marketplace</p>
                 <ul>
                   <li><a href="#" onClick={() => {goAuction(0);window.scrollTo(0, 0);}}>ALL</a></li>
-                  <li><a href="#" onClick={() => {goAuction(1);window.scrollTo(0, 0);}}>Photo</a></li>
-                  <li><a href="#" onClick={() => {goAuction(2);window.scrollTo(0, 0);}}>Artwork</a></li>
-                  <li><a href="#" onClick={() => {goAuction(3);window.scrollTo(0, 0);}}>Digital Art</a></li>
+                  <li><a href="#" onClick={() => {goAuction(1);window.scrollTo(0, 0);}}>ORIGINAL</a></li>
+                  <li><a href="#" onClick={() => {goAuction(2);window.scrollTo(0, 0);}}>ART</a></li>
+                  <li><a href="#" onClick={() => {goAuction(3);window.scrollTo(0, 0);}}>ITEM</a></li>
                 </ul>
               </div>
               <div className="footerCont3">

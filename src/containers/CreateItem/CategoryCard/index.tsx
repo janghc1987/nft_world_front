@@ -4,9 +4,9 @@ import { useRecoilState } from 'recoil';
 import createItemCategoryAtom from '../../../atoms/createItemCategory';
 
 const categories = [
-  'Photo',
-  'Artwork',
-  'Digital Art'
+  'ORIGINAL',
+  'ART',
+  'ITEM'
 ];
 
 const CategoryCard = () => {

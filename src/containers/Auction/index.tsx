@@ -44,11 +44,11 @@ const AuctionContainer = () => {
       let chkVal = $("#"+targetId).val();
       $(".sortchkList").append("<span gubun='"+chkVal+"'><em className='sortchkTxt'>"+chkVal+"</em><a href='#'><i className='fas fa-times'></i></a></span>");
       
-      if(chkVal === 'Photo'){
+      if(chkVal === 'ORIGINAL'){
         setAuctionCategory(1);
-      }else if(chkVal === 'Artwork'){
+      }else if(chkVal === 'ART'){
         setAuctionCategory(2);
-      }else if(chkVal === 'Digital Art'){
+      }else if(chkVal === 'ITEM'){
         setAuctionCategory(3);
       }
       
@@ -165,11 +165,11 @@ const AuctionContainer = () => {
       let chkVal = '';
 
       if(auctionCategory === 1){
-        chkVal = 'Photo';
+        chkVal = 'ORIGINAL';
       }else if(auctionCategory === 2){
-        chkVal = 'Artwork';
+        chkVal = 'ART';
       }else if(auctionCategory === 3){
-        chkVal = 'Digital Art';
+        chkVal = 'ITEM';
       }
 
       if ($(".sortmnuBtn").hasClass('off')) {
@@ -370,9 +370,9 @@ const AuctionContainer = () => {
               <a href="#none" className="sortmnuBtn off" onClick={clickCategory}>Category<i className="fas fa-chevron-right"></i></a>
               <div className="subsortMnu">
                 <ol>
-                  <li><p>Photo</p><input className="sortChkFn" id="sortChk2" type="checkbox" value="Photo" onClick={selectCategory}/><label htmlFor="sortChk2"><i className="fas fa-check"></i></label></li>
-                  <li><p>Artwork</p><input className="sortChkFn" id="sortChk3" type="checkbox" value="Artwork"onClick={selectCategory}/><label htmlFor="sortChk3"><i className="fas fa-check"></i></label></li>
-                  <li><p>Digital Art</p><input className="sortChkFn"  id="sortChk4" type="checkbox" value="Digital Art" onClick={selectCategory}/><label htmlFor="sortChk4"><i className="fas fa-check"></i></label></li>
+                  <li><p>ORIGINAL</p><input className="sortChkFn" id="sortChk2" type="checkbox" value="ORIGINAL" onClick={selectCategory}/><label htmlFor="sortChk2"><i className="fas fa-check"></i></label></li>
+                  <li><p>ART</p><input className="sortChkFn" id="sortChk3" type="checkbox" value="ART"onClick={selectCategory}/><label htmlFor="sortChk3"><i className="fas fa-check"></i></label></li>
+                  <li><p>ITEM</p><input className="sortChkFn"  id="sortChk4" type="checkbox" value="ITEM" onClick={selectCategory}/><label htmlFor="sortChk4"><i className="fas fa-check"></i></label></li>
                 </ol>
               </div>
             </li>

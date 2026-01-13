@@ -1,6 +1,6 @@
 import leftArrow from '../../../assets/img/direction_left_arrow_icon.png';
 import rightArrow from '../../../assets/img/direction_right_arrow_icon.png';
-import TVsicon from '../../../assets/img/TVsicon.png';
+import TVsicon from '../../../assets/img/ducky.png';
 
 
 import $ from 'jquery';

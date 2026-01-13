@@ -84,7 +84,7 @@ function SecLiveAuctions() {
   return (
     
     <div className="secCont3">
-    <p className="subtit">Artwork Explore<a href="#"  onClick={()=> {goAuction(2);window.scrollTo(0, 0);}} >See all</a></p>
+    <p className="subtit">ART Explore<a href="#"  onClick={()=> {goAuction(2);window.scrollTo(0, 0);}} >See all</a></p>
     <div className="cont2Bg">
       <img src={auctions.length>0 ? auctions[0].img:''} alt=""/>
       <div className="blurbox"></div>
@@ -100,7 +100,7 @@ function SecLiveAuctions() {
       </div>
     </div>
     <div className="contRank">
-      <p className="subtit">Artwork Ranking</p>
+      <p className="subtit">ART Ranking</p>
       <ul>
           {auctions.map((item, i) => (
             <ArtworkRankItem key={i} {...item} />

@@ -130,21 +130,21 @@ const HomeContainer = () => {
                     <a href="#none" onClick={()=> {goAuction(1);window.scrollTo(0, 0);}}>
                       <span className="frame type1"><img src={diaOn} alt=""/></span>
                       <span className="frame type2"><img src={diaOff} alt=""/></span>
-                      <span className="txt">Photo</span>
+                      <span className="txt">ORIGINAL</span>
                     </a>
                   </li>
                   <li>
                     <a href="#none" onClick={()=> {goAuction(2);window.scrollTo(0, 0);}}>
                       <span className="frame type1"><img src={puzzleOn} alt=""/></span>
                       <span className="frame type2"><img src={puzzleOff} alt=""/></span>
-                      <span className="txt">Artwork</span>
+                      <span className="txt">ART</span>
                     </a>
                   </li>
                   <li>
                     <a href="#none" onClick={()=> {goAuction(3);window.scrollTo(0, 0);}}>
                       <span className="frame type1"><img src={bcOn} alt=""/></span>
                       <span className="frame type2"><img src={bcOff} alt=""/></span>
-                      <span className="txt">Digital Art</span>
+                      <span className="txt">ITEM</span>
                     </a>
                   </li>
                 </ul>

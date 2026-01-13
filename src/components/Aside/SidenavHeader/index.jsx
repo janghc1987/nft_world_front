@@ -3,7 +3,7 @@ import $ from 'jquery';
 import mainlogo from '../../../assets/img/mainlogo.png';
 import srch from '../../../assets/img/srch.png';
 
-import mnu1 from '../../../assets/img/photo.png';
+import mnu1 from '../../../assets/img/puzzle.png';
 import mnu2 from '../../../assets/img/mnu2.png';
 import mnu3 from '../../../assets/img/mnu3.png';
 import mnu4 from '../../../assets/img/mnu4.png';
@@ -274,9 +274,9 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
             <a href="#" id="exploreId" className="off" onClick={explore}>Explore<i className="fas fa-caret-down"></i></a>
             <div className="subMnu">
               <ol>
-                <li><a href="#" onClick={() => goAuction(1)}><span className="frame"><img src={mnu1} alt=""/></span> Photo</a></li>
-                <li><a href="#" onClick={() => goAuction(2)}><span className="frame"><img src={mnu2} alt=""/></span> Artwork</a></li>
-                <li><a href="#" onClick={() => goAuction(3)}><span className="frame"><img src={mnu3} alt=""/></span> Digital Art</a></li>
+                <li><a href="#" onClick={() => goAuction(1)}><span className="frame"><img src={mnu1} alt=""/></span> ORIGINAL</a></li>
+                <li><a href="#" onClick={() => goAuction(2)}><span className="frame"><img src={mnu2} alt=""/></span> ART</a></li>
+                <li><a href="#" onClick={() => goAuction(3)}><span className="frame"><img src={mnu3} alt=""/></span> ITEM </a></li>
               </ol>
             </div>
           </li>
@@ -389,9 +389,9 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
 					<div className="subMnu">
 						<ol>
 							<li><a href="#" onClick={() => {goAuction(0);mobmnuPop();}}>All</a></li>
-							<li><a href="#" onClick={() => {goAuction(1);mobmnuPop();}}>Photo</a></li>
-							<li><a href="#" onClick={() => {goAuction(2);mobmnuPop();}}>Artwork</a></li>
-							<li><a href="#" onClick={() => {goAuction(3);mobmnuPop();}}>Digital Art</a></li>
+							<li><a href="#" onClick={() => {goAuction(1);mobmnuPop();}}>ORIGINAL</a></li>
+							<li><a href="#" onClick={() => {goAuction(2);mobmnuPop();}}>ART</a></li>
+							<li><a href="#" onClick={() => {goAuction(3);mobmnuPop();}}>ITEM </a></li>
 						</ol>
 					</div></li>
 				<li><a href="#"  onClick={() => {createItem();mobmnuPop();}}>Create</a></li>

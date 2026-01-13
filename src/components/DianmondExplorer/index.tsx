@@ -85,7 +85,7 @@ function SecLiveAuctions() {
   return (
     
     <div className="secCont2">
-    <p className="subtit">Photo Explore<a href="#" onClick={()=> {goAuction(1);window.scrollTo(0, 0);}}>See all</a></p>
+    <p className="subtit">ORIGINAL Explore<a href="#" onClick={()=> {goAuction(1);window.scrollTo(0, 0);}}>See all</a></p>
     <div className="cont2Bg">
       <img src={auctions.length>0 ? auctions[0].img:''} alt=""/>
       <div className="blurbox"></div>
@@ -101,7 +101,7 @@ function SecLiveAuctions() {
       </div>
     </div>
     <div className="contRank">
-      <p className="subtit">Photo Ranking</p>
+      <p className="subtit">ORIGINAL Ranking</p>
       <ul>
           {auctions.map((item, i) => (
             <DianmondExplorerRankItem key={i} {...item} />

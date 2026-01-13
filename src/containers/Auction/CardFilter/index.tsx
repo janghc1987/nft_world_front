@@ -10,9 +10,9 @@ import auctionSortAtom from '../../../atoms/auctionSort';
 const sorts = ['ASC', 'DESC', 'NEW', 'END', 'HOT'];
 const categories = [
   'All',
-  'Photo',
-  'Artwork',
-  'Digital Art'
+  'ORIGINAL',
+  'ART',
+  'ITEM '
 ];
 
 const CardFilter = () => {
