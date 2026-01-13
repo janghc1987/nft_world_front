@@ -3,7 +3,7 @@ import $ from 'jquery';
 import mainlogo from '../../../assets/img/mainlogo.png';
 import srch from '../../../assets/img/srch.png';
 
-import mnu1 from '../../../assets/img/puzzle.png';
+import mnu1 from '../../../assets/img/mnu1.png';
 import mnu2 from '../../../assets/img/mnu2.png';
 import mnu3 from '../../../assets/img/mnu3.png';
 import mnu4 from '../../../assets/img/mnu4.png';
