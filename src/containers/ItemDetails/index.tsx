@@ -17,7 +17,7 @@ import sample1 from '../../assets/img/sample1.png';
 import clse from '../../assets/img/clse.png';
 import DateTimePicker from 'react-datetime-picker';
 
-import TVsOn from '../../assets/img/mainlogo.png';
+import TVsOn from '../../assets/img/footerlogo.png';
 import addresses from '../../constants/addresses';
 import isApprovedAtom from '../../atoms/isApproved';
 import { useHistory } from 'react-router-dom';
