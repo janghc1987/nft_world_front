@@ -33,6 +33,8 @@ import exchg from '../../assets/img/exchg.png';
 import { swapHistory } from '../../types';
 import BigNumber from 'bignumber.js';
 import web3 from '../../connection/web3';
+import imageCompression from "browser-image-compression";
+
 
 
 
@@ -67,7 +69,7 @@ const ProfileContainer = () => {
 	const [tvpAmount, setTvpAmount] = React.useState<String>('0');
 	const [polygonAmount, setPolygonAmount] = React.useState<String>('0');
 	const [myProfileImg, setMyProfileImg] = React.useState<String>('');
-	const [uploadFile,setUploadFile] = React.useState(null);
+	const [uploadFile,setUploadFile] = React.useState<File | null>(null);
 	const [mySwapHistory, setMySwapHistory] = React.useState<swapHistory>();
 	const [dollorPrice, setDollorPrice] = React.useState<String>('0');
 	const [ethPrice, setEthPrice] = React.useState<String>('0');
@@ -126,6 +128,30 @@ const ProfileContainer = () => {
 		console.log(e);
 	  }
 	};
+
+	const makeSafeFileName = (originalName: string, mime?: string) => {
+		const extFromName = originalName?.includes(".")
+		  ? originalName.split(".").pop()
+		  : "";
+	  
+		const extFromMime =
+		  mime === "image/jpeg" ? "jpg" :
+		  mime === "image/png" ? "png" :
+		  mime === "image/webp" ? "webp" :
+		  mime === "image/gif" ? "gif" :
+		  "";
+	  
+		const ext = (extFromName || extFromMime || "png").toLowerCase();
+		return `${Date.now()}_${crypto.randomUUID()}.${ext}`; // ✅ 한글 없는 저장명
+	  };
+	  
+	  const toFileWithName = (blobOrFile: Blob, fileName: string) => {
+		return new File([blobOrFile], fileName, {
+		  type: blobOrFile.type || "application/octet-stream",
+		  lastModified: Date.now(),
+		});
+	  };
+	  
   
 	const getTotalSupply = async () => {
 	
@@ -233,7 +259,7 @@ const ProfileContainer = () => {
 		  var jsonData
 		  axios(config).then(function (response) {
   
-			  console.log(response.data)
+			  console.log('data',response.data)
   
 			  jsonData = JSON.parse(JSON.stringify(response.data));
   
@@ -322,47 +348,42 @@ const ProfileContainer = () => {
 
 	async function chgMyProfileImg() {
 		try {
-	
-		  var formData = new FormData();
-		  formData.append('file',uploadFile);
-		  formData.append('address',walletAccount);
-		  
-	
-		  var config = {
-			method: 'post',
-			url: addresses.targetIp+'/users/chgMyImg',
-			headers: { 
-			  'Accept': 'multipart/form-data', 
-			  'Content-Type': 'multipart/form-data'
-			},
-			data : formData
+		  if (!uploadFile) {
+			alert("업로드할 파일이 없습니다.");
+			return;
+		  }
+	  
+		  const formData = new FormData();
+	  
+		  // ✅ 3번째 인자로 filename 강제 전달 (서버에서 originalname을 써도 안전)
+		  formData.append("file", uploadFile, uploadFile.name);
+		  formData.append("address", walletAccount);
+	  
+		  const config = {
+			method: "post",
+			url: addresses.targetIp + "/users/chgMyImg",
+			// ✅ Content-Type은 설정하지 마 (axios가 boundary 포함해서 자동으로 잡아줌)
+			headers: { Accept: "application/json" },
+			data: formData,
 		  };
-
-		  
-		  axios(config).then(function (response) {
-	
-			var jsonData = JSON.parse(JSON.stringify(response.data));
-			console.log(jsonData)
-			if(jsonData.code === 'OK'){
-			  alert('이미지 변경 성공')
-				//$(".nftcreateconfPop").show();
-			}else{
-			  alert('이미지 변경 실패!');
-			}
-	
-	
-		  })
-		  .catch(function (error) {
-			console.log(error);
-		  });
-	
-		  //응답 성공 
-		  //console.log(response);
+	  
+		  axios(config)
+			.then(function (response) {
+			  const jsonData = JSON.parse(JSON.stringify(response.data));
+			  if (jsonData.code === "OK") {
+				alert("이미지 변경 성공");
+			  } else {
+				alert("이미지 변경 실패!");
+			  }
+			})
+			.catch(function (error) {
+			  console.log(error);
+			});
 		} catch (error) {
-		  //응답 실패
 		  console.error(error);
 		}
 	  }
+	  
 
 	  const copyAddress = () => {
 		
@@ -529,16 +550,40 @@ const ProfileContainer = () => {
 		setCapturedFileBuffer(null);
 	  }
 	
-	  const captureFile: React.ChangeEventHandler<HTMLInputElement> = (
-		event: any
-	  ) => {
+	  const captureFile: React.ChangeEventHandler<HTMLInputElement> = async (event: any) => {
 		event.preventDefault();
-	
-		const file = event.target.files[0];
-	
-		setBuffer(file);
-		setUploadFile(file);
+	  
+		const file: File | undefined = event.target.files?.[0];
+		if (!file) return;
+	  
+		const options = {
+		  maxSizeMB: 1,
+		  maxWidthOrHeight: 1920,
+		  useWebWorker: true,
+		};
+	  
+		try {
+		  let upload: File;
+	  
+		  if (file.type === "image/gif") {
+			// ✅ GIF는 압축하면 깨질 수 있어 원본 유지 + 파일명만 강제
+			const safeName = makeSafeFileName(file.name, file.type);
+			upload = toFileWithName(file, safeName);
+		  } else {
+			// ✅ 압축 + 파일명 강제
+			const compressed = await imageCompression(file, options); // Blob/File
+			const safeName = makeSafeFileName(file.name, compressed.type || file.type);
+			upload = toFileWithName(compressed, safeName);
+		  }
+	  
+		  setBuffer(upload);
+		  setUploadFile(upload);
+		} catch (e) {
+		  console.log(e);
+		}
 	  };
+	  
+	  
 	
 	  const setBuffer = (file: any) => {
 		const reader = new FileReader();
