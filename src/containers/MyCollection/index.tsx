@@ -20,10 +20,10 @@ import axios from 'axios';
 
 import nodataImg from '../../assets/img/nodataImg.png';
 import userOn from '../../assets/img/userOn.png';
-import TVsOn from '../../assets/img/TVsOn.png';
+import TVsOn from '../../assets/img/dunkyOn.png';
 import logoutOn from '../../assets/img/logoutOn.png';
 import userOff from '../../assets/img/userOff.png';
-import TVsOff from '../../assets/img/TVsOff.png'; 
+import TVsOff from '../../assets/img/dunkyOff.png'; 
 import logoutOff from '../../assets/img/logoutOff.png';
 import copyImg from '../../assets/img/copy.png';
 import edit1 from '../../assets/img/edit1.png';
