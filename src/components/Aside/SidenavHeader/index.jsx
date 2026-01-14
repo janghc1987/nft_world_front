@@ -13,7 +13,7 @@ import mnu7 from '../../../assets/img/mnu7.png';
 import mnu8 from '../../../assets/img/mnu8.png';
 
 import userOn from '../../../assets/img/userOn.png';
-import TVsOn from '../../../assets/img/dunkyOn.png';
+import TVsOn from '../../../assets/img/ducky.png';
 import logoutOn from '../../../assets/img/logoutOn.png';
 
 
