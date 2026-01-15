@@ -291,7 +291,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
               </ol>
             </div>
           </li>
-          <li><a href="#" onClick={()=>{window.open('https://dodogocoin.net/')}}>Contact Us</a></li>
+          <li><a href="#" onClick={()=>{window.open('https://www.duckybrain.com')}}>Contact Us</a></li>
         </ul>
       </nav>
       <div className="connectBtns">
@@ -368,7 +368,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
           <li><a href="#none" onClick={() => {goAuction(0);mobmnuPop();}}>Explore</a></li>
           <li><a href={Pdf_ko}>Guides(ko)</a></li>
           <li><a href={Pdf_en}>Guides(en)</a></li>
-          <li><a href="#none" onClick={()=>{window.open('https://dodogocoin.net');mobmnuPop();}}>Contact Us</a></li>
+          <li><a href="#none" onClick={()=>{window.open('https://www.duckybrain.com');mobmnuPop();}}>Contact Us</a></li>
           <li><a href="#none" onClick={() => {createItem();mobmnuPop();}}>Create</a></li>
         </ul>
       </div>
@@ -395,14 +395,15 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
 						</ol>
 					</div></li>
 				<li><a href="#"  onClick={() => {createItem();mobmnuPop();}}>Create</a></li>
-				<li><a href="#" onClick={mobileGuides} id="mobileGuides" className="off">Guides<i
+				{/* <li><a href="#" onClick={mobileGuides} id="mobileGuides" className="off">Guides<i
 						className="fas fa-caret-right"></i></a>
 					<div className="subMnu">
 						<ol>
               <li><a href="https://drive.google.com/file/d/1vbF4SuPxgk6CiTwMWiezyU4BMw6CRhK4/view?usp=sharing" target="_blank">English</a></li>
 							<li><a href="https://drive.google.com/file/d/14JretVHxoWX7TXLUZcTjaEoZz9W0PNIe/view?usp=sharing" target="_blank">Korean</a></li>
 						</ol>
-					</div></li>
+					</div>
+        </li> */}
 				<li><a href="#" onClick={()=>{window.open('https://www.tvs.gallery/contact');mobmnuPop();}}>Contact Us</a></li>
 			</ul>
 			<div className="mobBtnArea">

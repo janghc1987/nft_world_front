@@ -101,7 +101,7 @@ function SidenavFooter() {
                 </ul>
               </div>
             </div>
-            <p>
+            {/* <p>
               <span>
                 <select id="terms" onChange={termService}>
                   <option value="">Terms of Service</option>
@@ -116,7 +116,7 @@ function SidenavFooter() {
                   <option value="en">English</option>
                 </select>  
               </span>
-            </p>
+            </p> */}
           </div>
         </footer>
 
